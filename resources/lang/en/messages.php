@@ -2995,4 +2995,10 @@
   'Remove subcategories first!' => 'Remove subcategories first!',
   'Sub Category removed!' => 'Sub Category removed!',
   'ai_setting_logs' => 'Ai setting logs',
+  'This phone has already been used in another account!' => 'This phone has already been used in another account!',
+  'last_name_required' => 'Last name required',
+  'order_canceled' => 'Order canceled',
+  'customer_wallet_status_is_disable' => 'Customer wallet status is disable',
+  'Bulk_Export' => 'Bulk Export',
+  'Admin password updated successfully!' => 'Admin password updated successfully!',
 );
