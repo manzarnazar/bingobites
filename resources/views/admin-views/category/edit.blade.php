@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/category.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/category.png')}}" alt="">
                 <span class="page-header-title">
                     {{ $category->parent_id == 0 ? translate('Update Category') : translate('Update Sub Category') }}
                 </span>

@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img src="{{asset('/public/assets/admin/img/wallet.png')}}" alt="{{translate('public')}}" class="width-24">
+                <img src="{{asset('/assets/admin/img/wallet.png')}}" alt="{{translate('public')}}" class="width-24">
                 <span>
                     {{translate('customer')}} {{translate('wallet')}} {{translate('report')}}
                 </span>
@@ -82,7 +82,7 @@
                     <span class="subtitle">
                         {{Helpers::set_symbol($debit)}}
                     </span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/3.png')}}" alt="{{translate('dashboard')}}">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/3.png')}}" alt="{{translate('dashboard')}}">
                 </div>
             </div>
 
@@ -92,7 +92,7 @@
                     <span class="subtitle">
                         {{Helpers::set_symbol($credit)}}
                     </span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/4.png')}}" alt="{{translate('dashboard')}}">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/4.png')}}" alt="{{translate('dashboard')}}">
                 </div>
             </div>
 
@@ -102,7 +102,7 @@
                     <span class="subtitle">
                         {{Helpers::set_symbol($balance)}}
                     </span>
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/1.png')}}" alt="{{translate('dashboard')}}">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/1.png')}}" alt="{{translate('dashboard')}}">
                 </div>
             </div>
         </div>
@@ -168,7 +168,7 @@
 
                 @if(count($transactions) == 0)
                     <div class="text-center p-4">
-                        <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                        <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                         <p class="mb-0">{{translate('No_data_to_show')}}</p>
                     </div>
                 @endif
@@ -177,7 +177,7 @@
         @endsection
 
         @push('script_2')
-            <script src="{{asset('public/assets/admin/js/loyalty-point.js')}}"></script>
+            <script src="{{asset('assets/admin/js/loyalty-point.js')}}"></script>
 
             <script>
                 "use strict";

@@ -42,7 +42,7 @@
         @if(session('branch-store'))
             <div class="d-flex align-items-center gap-2 alert--message-2 fade show active" id="branch-alert">
                 <img width="28" class="align-self-start image"
-                     src="{{ asset('public/assets/admin/svg/components/CircleWavyCheck.svg') }}" alt="">
+                     src="{{ asset('assets/admin/svg/components/CircleWavyCheck.svg') }}" alt="">
                 <div class="">
                     <h6 class="title mb-2 text-truncate">{{ translate('Branch Created Successfully') }}!</h6>
                     <p class="message">{{translate('By default delivery charge type is set to fixed. Kindly configure the delivery charge from Delivery fee setup')}} <a
@@ -58,7 +58,7 @@
 
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/branch.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/branch.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('branch_list')}}
                 </span>
@@ -184,7 +184,7 @@
 
                 @if(count($branches) == 0)
                     <div class="text-center p-4">
-                        <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                        <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                         <p class="mb-0">{{translate('No_data_to_show')}}</p>
                     </div>
                 @endif

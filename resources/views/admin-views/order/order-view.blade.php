@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center justify-content-end mb-3">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2 flex-grow-1">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/order_details.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/order_details.png')}}" alt="">
                 <span class="page-header-title">{{translate('Order_Details')}}</span>
                 <span class="badge badge-soft-dark rounded-50 fz-14 mb-0">{{$order->details->count()}}</span>
             </h2>
@@ -267,7 +267,7 @@
                                         <div class="media gap-3 w-max-content">
 
                                             <img class="img-fluid avatar avatar-lg"
-                                                 src="{{ $detail->product?->imageFullPath ?? asset('public/assets/admin/img/160x160/img2.jpg') }}"
+                                                 src="{{ $detail->product?->imageFullPath ?? asset('assets/admin/img/160x160/img2.jpg') }}"
                                                  alt="Image Description">
 
                                             <div class="media-body text-dark fz-12">
@@ -688,7 +688,7 @@
                                        class="btn btn-primary btn-block d-flex gap-1 justify-content-center align-items-center"
                                        data-toggle="modal" data-target="#assignDeliveryMan">
                                         <img width="17"
-                                             src="{{asset('public/assets/admin/img/icons/assain_delivery_man.png')}}"
+                                             src="{{asset('assets/admin/img/icons/assain_delivery_man.png')}}"
                                              alt="">
                                         {{translate('Assign_Delivery_Man')}}
                                     </a>
@@ -758,7 +758,7 @@
                                                    data-placement="top"
                                                    href="http://maps.google.com/maps?z=12&t=m&q=loc:{{$current['latitude']}}+{{$current['longitude']}}">
                                                     <img width="13"
-                                                         src="{{asset('public/assets/admin/img/icons/location.png')}}"
+                                                         src="{{asset('assets/admin/img/icons/location.png')}}"
                                                          alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{$current['location']?? ''}}
                                                 </a>
                                             @else
@@ -766,7 +766,7 @@
                                                    data-placement="top"
                                                    title="{{translate('Waiting for location...')}}">
                                                     <img width="13"
-                                                         src="{{asset('public/assets/admin/img/icons/location.png')}}"
+                                                         src="{{asset('assets/admin/img/icons/location.png')}}"
                                                          alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{translate('Waiting for location...')}}
                                                 </a>
                                             @endif
@@ -775,7 +775,7 @@
                                                data-toggle="tooltip" data-placement="top"
                                                title="{{translate('Only available when order is out for delivery!')}}">
                                                 <img width="13"
-                                                     src="{{asset('public/assets/admin/img/icons/location.png')}}"
+                                                     src="{{asset('assets/admin/img/icons/location.png')}}"
                                                      alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{translate('Only available when order is out for delivery!')}}
                                             </a>
                                         @endif
@@ -845,7 +845,7 @@
                                                         <a target="_blank" class="text-dark"
                                                            href="http://maps.google.com/maps?z=12&t=m&q=loc:{{$address['latitude']}}+{{$address['longitude']}}">
                                                             <img width="13"
-                                                                 src="{{asset('public/assets/admin/img/icons/location.png')}}"
+                                                                 src="{{asset('assets/admin/img/icons/location.png')}}"
                                                                  alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                             {{$address['address']}}
                                                         </a>
@@ -925,7 +925,7 @@
                             <div class="media flex-wrap gap-3 align-items-center">
                                 <a target="#" class="">
                                     <img class="avatar avatar-lg rounded-circle"
-                                         src="{{asset('public/assets/admin/img/160x160/img1.jpg')}}" alt="">
+                                         src="{{asset('assets/admin/img/160x160/img1.jpg')}}" alt="">
                                 </a>
                                 <div class="media-body d-flex flex-column gap-1">
                                     <a target="#"
@@ -963,7 +963,7 @@
                                 <div class="media flex-wrap gap-3 align-items-center">
                                     <a target="#" class="">
                                         <img class="avatar avatar-lg rounded-circle"
-                                             src="{{asset('public/assets/admin/img/160x160/img1.jpg')}}" alt="">
+                                             src="{{asset('assets/admin/img/160x160/img1.jpg')}}" alt="">
                                     </a>
                                     <div class="media-body d-flex flex-column gap-1">
                                         <a target="#"
@@ -975,7 +975,7 @@
                                 <div class="media flex-wrap gap-3 align-items-center">
                                     <a target="#" class="">
                                         <img class="avatar avatar-lg rounded-circle"
-                                             src="{{asset('public/assets/admin/img/160x160/img1.jpg')}}" alt="">
+                                             src="{{asset('assets/admin/img/160x160/img1.jpg')}}" alt="">
                                     </a>
                                     <div class="media-body d-flex flex-column gap-1">
                                         <a target="#"
@@ -1026,7 +1026,7 @@
                         @if(isset($order->branch))
                             <hr class="w-100">
                             <div class="d-flex align-items-center text-dark gap-3">
-                                <img width="13" src="{{asset('public/assets/admin/img/icons/location.png')}}" alt="">
+                                <img width="13" src="{{asset('assets/admin/img/icons/location.png')}}" alt="">
                                 <a target="_blank" class="text-dark"
                                    href="http://maps.google.com/maps?z=12&t=m&q=loc:{{$order->branch['latitude']}}+{{$order->branch['longitude']}}">
                                     {{$order->branch['address']}}<br>
@@ -1387,7 +1387,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <img width="70" class="avatar-img ratio-1 mx-auto mb-4"
-                             src="{{asset('public/assets/admin/img/modal/delete-warning.png')}}" alt="">
+                             src="{{asset('assets/admin/img/modal/delete-warning.png')}}" alt="">
                         <h4 class="mb-3">{{ translate('Are you sure to delete this product?') }}</h4>
                         <p class="mb-30">
                             {{ translate('If once you delete this product, this will remove from product list.') }}
@@ -1417,7 +1417,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <img width="70" class="avatar-img ratio-1 mx-auto mb-4"
-                             src="{{asset('public/assets/admin/img/modal/delete-warning.png')}}" alt="">
+                             src="{{asset('assets/admin/img/modal/delete-warning.png')}}" alt="">
                         <h4 class="mb-3">{{ translate('Are you sure you want to edit this order') }}?</h4>
                         <p class="mb-30">
                             {{ translate('If you edit this order, some product details will be updated, which may affect the total price') }}

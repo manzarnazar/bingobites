@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="18" height="18" class="svg" src="{{ asset(path: 'public/assets/admin/img/ai/ai-nav-icon.svg') }}" alt="">
+                <img width="18" height="18" class="svg" src="{{ asset(path: 'assets/admin/img/ai/ai-nav-icon.svg') }}" alt="">
 
                 <span class="page-header-title">
                     {{translate('AI_Setup')}}
@@ -29,8 +29,8 @@
                                        name="status"
                                        id="{{ env('APP_MODE') == 'demo' ? 'call-demo' : 'show-global-confirmation-modal' }}"
                                        class="switcher_input"
-                                       data-on-image="{{ asset('public/assets/admin/img/icons/status-on.png') }}"
-                                       data-off-image="{{ asset('public/assets/admin/img/icons/status-off.png') }}"
+                                       data-on-image="{{ asset('assets/admin/img/icons/status-on.png') }}"
+                                       data-off-image="{{ asset('assets/admin/img/icons/status-off.png') }}"
                                         {{ isset($data['status']) && $data['status'] == 1 ? 'checked' : '' }}>
                                 <span class="switcher_control"></span>
                             </label>
@@ -75,7 +75,7 @@
     {{-- View guideline btn --}}
     <div class="d-flex gap-2 flex-column align-items-center bg-white position-fixed cursor-pointer view-guideline-btn" data-toggle="offcanvas" data-target="#offcanvasSetupGuide">
         <span class="bg-primary p-5px text-white rounded d-flex justify-content-center align-items-center">
-            <img src="{{ asset(path: 'public/assets/admin/img/ai/redo.svg') }}" alt="" class="svg" width="10" height="8">
+            <img src="{{ asset(path: 'assets/admin/img/ai/redo.svg') }}" alt="" class="svg" width="10" height="8">
         </span>
         <span class="view-guideline-btn-text text-dark font-weight-medium text-nowrap">
             {{ translate('View_Guideline') }}

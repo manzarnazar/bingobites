@@ -432,7 +432,7 @@
                         @if (isset($social_media))
                             @foreach ($social_media as $social)
                                 <a href="{{ $social->link }}" target=”_blank” id="{{ $social->name  }}-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data[$social->name]) && $data[$social->name] == 1)?'':'display:none;' }}">
-                                    <img src="{{asset('/public/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
+                                    <img src="{{asset('/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
                                 </a>
                             @endforeach
                         @endif

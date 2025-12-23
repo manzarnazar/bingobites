@@ -4,14 +4,14 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{ asset('public/assets/admin/vendor/swiper/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/vendor/swiper/swiper-bundle.min.css') }}" />
 @endpush
 
 @section('content')
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 justify-content-between align-items-center mb-4">
             <h2 class="h1 text-title mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{ asset('/public/assets/admin/img/icons/marketing-tools.svg') }}"
+                <img width="20" class="avatar-img" src="{{ asset('/assets/admin/img/icons/marketing-tools.svg') }}"
                     alt="">
                 {{ translate('Marketing_Tool') }}
             </h2>
@@ -251,7 +251,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="d-flex flex-column align-items-center mx-w450 mx-auto">
-                                            <img src="{{ asset('public/assets/admin/img/marketing-tools.png') }}"
+                                            <img src="{{ asset('assets/admin/img/marketing-tools.png') }}"
                                                 width="80" loading="lazy" alt=""
                                                 class="dark-support rounded mb-4">
                                             <h3 class="mb-4">
@@ -299,7 +299,7 @@
                                 <div class="">
                                     <div class="d-flex justify-content-center mb-5">
                                         <img width="80"
-                                            src="{{ asset('public/assets/admin/img/facebook-circle.png') }}"
+                                            src="{{ asset('assets/admin/img/facebook-circle.png') }}"
                                             loading="lazy" alt="img">
                                     </div>
                                     <div class="text-start title-color mb-3">
@@ -371,7 +371,7 @@
 
 @push('script_2')
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script href="{{ asset('public/assets/admin/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script href="{{ asset('assets/admin/vendor/swiper/swiper-bundle.min.js') }}"></script>
     <script>
         $(window).on("load", function() {
             if ($(".instruction-carousel").length) {

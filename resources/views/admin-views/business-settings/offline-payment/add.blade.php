@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/business_setup2.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/business_setup2.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Add Offline Payment Method')}}
                 </span>
@@ -113,7 +113,7 @@
             <div class="modal-body">
                 <div class="d-flex align-items-center flex-column gap-3 text-center">
                     <h3>{{ translate('Offline Payment') }}</h3>
-                    <img width="100" src="{{asset('public/assets/admin-module/img/offline_payment.png')}}" alt="">
+                    <img width="100" src="{{asset('assets/admin-module/img/offline_payment.png')}}" alt="">
                     <p class="text-muted">{{ translate('Pay your bill using the information below and') }} <br class="d-none d-sm-block"> {{ translate('input the information in the form') }}</p>
                 </div>
 

@@ -9,16 +9,16 @@
     <link rel="shortcut icon" href="">
     <link rel="icon" type="image/x-icon" href="{{ asset('storage/app/public/restaurant/' . $icon ?? '') }}">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/vendor.min.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/vendor/icon-set/style.css">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/theme.minc619.css?v=1.0">
-    <link rel="stylesheet" href="{{asset('public/assets/admin')}}/css/style.css?v=1.0">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/vendor.min.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="{{asset('assets/admin')}}/css/style.css?v=1.0">
 </head>
 <body>
 
 <div class="container">
     <div class="text-center my-5">
-        <img class="mt-5" src="{{ asset('public/assets/admin/img/img/maintenance.png') }}" alt="{{ translate('maintenance') }}">
+        <img class="mt-5" src="{{ asset('assets/admin/img/img/maintenance.png') }}" alt="{{ translate('maintenance') }}">
     </div>
     <div class="text-center my-5">
         <h2>{{$exception->getHeaders()['maintenanceMessage'] ?? '' }}</h2>

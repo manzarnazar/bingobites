@@ -301,7 +301,7 @@
                                                             <img
                                                                 style="width: 50px; object-fit: cover; height: 50px; border-radius: 5px;"
                                                                  src="{{asset('storage/app/public/product/')}}/{{$detail->product?->image}}"
-                                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
                                                                  alt="Image Description">
 
                                                             <div class="media-body text-dark fz-12">
@@ -495,7 +495,7 @@
                         @if (isset($social_media))
                             @foreach ($social_media as $social)
                                 <a href="{{ $social->link }}" target=”_blank” id="{{ $social->name  }}-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data[$social->name]) && $data[$social->name] == 1)?'':'display:none;' }}">
-                                    <img src="{{asset('/public/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
+                                    <img src="{{asset('/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
                                 </a>
                             @endforeach
                         @endif

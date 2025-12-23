@@ -27,7 +27,7 @@
                     <td>{{ $loop->iteration }}</td>
                     <td>
                         <div class="media align-items-center gap-10 w-max-content">
-                            <img width="44" class="avatar-img ratio-1" src="{{ $detail['image'] ?? asset('public/assets/admin/img/160x160/img2.jpg') }}" alt="">
+                            <img width="44" class="avatar-img ratio-1" src="{{ $detail['image'] ?? asset('assets/admin/img/160x160/img2.jpg') }}" alt="">
                             <div class="media-body">
                                 <div class="fz-13 text-title line-limit-1 max-w180">{{ $detail['name'] }}</div>
                                 @if(!empty($variation))

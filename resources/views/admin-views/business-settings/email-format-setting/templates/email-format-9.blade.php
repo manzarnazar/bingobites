@@ -146,19 +146,19 @@ $company_name = App\Models\BusinessSetting::where('key', 'business_name')->first
                 </span>
                 <span class="social" style="text-align:center">
                     <a href="#" id="facebook-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data['facebook']) && $data['facebook'] == 1)?'':'display:none;' }}">
-                        <img src="{{asset('/public/assets/admin/img/img/facebook.png')}}" alt="">
+                        <img src="{{asset('/assets/admin/img/img/facebook.png')}}" alt="">
                     </a>
                     <a href="#" id="instagram-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data['instagram']) && $data['instagram'] == 1)?'':'display:none;' }}">
-                        <img src="{{asset('/public/assets/admin/img/img/instagram.png')}}" alt="">
+                        <img src="{{asset('/assets/admin/img/img/instagram.png')}}" alt="">
                     </a>
                     <a href="#" id="twitter-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data['twitter']) && $data['twitter'] == 1)?'':'display:none;' }}">
-                        <img src="{{asset('/public/assets/admin/img/img/twitter.png')}}" alt="">
+                        <img src="{{asset('/assets/admin/img/img/twitter.png')}}" alt="">
                     </a>
                     <a href="#" id="linkedin-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data['linkedin']) && $data['linkedin'] == 1)?'':'display:none;' }}">
-                        <img src="{{asset('/public/assets/admin/img/img/linkedin.png')}}" alt="">
+                        <img src="{{asset('/assets/admin/img/img/linkedin.png')}}" alt="">
                     </a>
                     <a href="#" id="pinterest-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data['pinterest']) && $data['pinterest'] == 1)?'':'display:none;' }}">
-                        <img src="{{asset('/public/assets/admin/img/img/pinterest.png')}}" alt="">
+                        <img src="{{asset('/assets/admin/img/img/pinterest.png')}}" alt="">
                     </a>
                 </span>
                 <span class="copyright" id="mail-copyright">

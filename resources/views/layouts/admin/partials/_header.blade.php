@@ -6,10 +6,10 @@
                 @php($restaurant_logo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value)
                 <a class="navbar-brand" href="{{route('admin.dashboard')}}" aria-label="">
                     <img class="navbar-brand-logo" style="object-fit: contain;"
-                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                         onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                          src="{{asset('storage/app/public/restaurant/'.$restaurant_logo)}}" alt="Logo">
                     <img class="navbar-brand-logo-mini" style="object-fit: contain;"
-                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                         onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                          src="{{asset('storage/app/public/restaurant/'.$restaurant_logo)}}"
                          alt="Logo">
                 </a>
@@ -47,7 +47,7 @@
                                         <a class="topbar-link dropdown-toggle d-flex gap-2 align-items-center font-weight-bold dropdown-toggle-empty lang-country-flag" href="#" data-toggle="dropdown">
                                             @foreach($lang as $data)
                                                 @if($data['code']==$local)
-                                                    <img src="{{asset('public/assets/admin/img/google_translate_logo.png')}}" alt=""> <span>{{$data['name']}}</span>
+                                                    <img src="{{asset('assets/admin/img/google_translate_logo.png')}}" alt=""> <span>{{$data['name']}}</span>
                                                 @endif
                                             @endforeach
                                         </a>
@@ -57,7 +57,7 @@
                                                     <li>
                                                         <a class="dropdown-item pr-8 d-flex gap-2 align-items-center"
                                                            href="{{route('admin.lang',[$data['code']])}}">
-                                                            {{--<img class="avatar-img rounded-0" src="{{asset('public/assets/admin/img/flag.png')}}" alt="Image Description">--}}
+                                                            {{--<img class="avatar-img rounded-0" src="{{asset('assets/admin/img/flag.png')}}" alt="Image Description">--}}
                                                             <span class="text-capitalize">{{\App\CentralLogics\Helpers::get_language_name($data['code'])}}</span>
                                                         </a>
                                                     </li>
@@ -110,7 +110,7 @@
                                 </div>
                                 <div class="avatar avatar-sm avatar-circle">
                                     <img class="avatar-img"
-                                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                         onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                          src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
                                          alt="Image Description">
                                     <span class="avatar-status avatar-sm-status avatar-status-success"></span>
@@ -123,7 +123,7 @@
                                     <div class="media align-items-center">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                                  src="{{asset('storage/app/public/admin')}}/{{auth('admin')->user()->image}}"
                                                  alt="Image Description">
                                         </div>

@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/third-party.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/third-party.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('third_party')}}
                 </span>
@@ -116,7 +116,7 @@
                                     <div class="payment--gateway-img">
                                         <img style="height: 80px"
                                              src="{{asset('storage/app/public/payment_modules/gateway_image')}}/{{$additional_data != null ? $additional_data->gateway_image : ''}}"
-                                             onerror="this.src='{{asset('public/assets/admin/img/placeholder.png')}}'"
+                                             onerror="this.src='{{asset('assets/admin/img/placeholder.png')}}'"
                                              alt="public">
                                     </div>
 
@@ -204,7 +204,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <div class="my-4">
-                            <img src="{{ asset('public/assets/admin/svg/components/info.svg') }}" alt="Checked Icon">
+                            <img src="{{ asset('assets/admin/svg/components/info.svg') }}" alt="Checked Icon">
                         </div>
                         <div class="my-4">
                             <h4>{{ translate('Offline Payment Warning') }}</h4>

@@ -5,7 +5,7 @@
 @push('css_or_js')
 <style>
     .qr-wrapper{
-        background: url('{{ asset('public/assets/admin/img/qr-bg.png') }}') no-repeat scroll 0% 0% / 100% 100% !important;
+        background: url('{{ asset('assets/admin/img/qr-bg.png') }}') no-repeat scroll 0% 0% / 100% 100% !important;
     }
 
     @media print {
@@ -14,7 +14,7 @@
             print-color-adjust: exact !important;
         }
         .qr-wrapper{
-            background: url('{{ asset('public/assets/admin/img/qr-bg.png') }}') no-repeat scroll 0% 0% / 100% 100% !important;
+            background: url('{{ asset('assets/admin/img/qr-bg.png') }}') no-repeat scroll 0% 0% / 100% 100% !important;
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
             color-exact: exact !important;
@@ -53,7 +53,7 @@
                                 <div class="d-flex justify-content-center py-3">
                                     <a href="" class="qr-logo ratio-1" style="max-width: 100px; min-width: 70px;">
                                         <img src="{{asset('storage/app/public/qrcode/'.$data['logo'])}}" class="w-100 h-100 object-cover"
-                                             onerror="this.src='{{asset('public/assets/admin/img/logo2.png')}}'" alt="">
+                                             onerror="this.src='{{asset('assets/admin/img/logo2.png')}}'" alt="">
                                     </a>
                                 </div>
                                 <div class="d-flex justify-content-center">
@@ -64,7 +64,7 @@
 
                                 <div class="text-center mt-4">
                                     <div class="d-flex justify-content-center">
-                                        <img src="{{asset('public/assets/admin/img/scan-me.png')}}" class="mw-100" alt="">
+                                        <img src="{{asset('assets/admin/img/scan-me.png')}}" class="mw-100" alt="">
                                     </div>
                                     <div class="my-3">
                                         {!! $code !!}
@@ -139,7 +139,7 @@
                                     print-color-adjust: exact !important;
                                 }
                                 .qr-wrapper {
-                                    background: url('{{ url('public/assets/admin/img/qr-bg.png') }}') no-repeat scroll 0% 0% / 100% 100% !important;
+                                    background: url('{{ url('assets/admin/img/qr-bg.png') }}') no-repeat scroll 0% 0% / 100% 100% !important;
                                 }
                                 img {
                                     display: block !important;

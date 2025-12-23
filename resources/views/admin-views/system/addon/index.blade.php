@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{ asset('public/assets/admin/vendor/swiper/swiper-bundle.min.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/admin/vendor/swiper/swiper-bundle.min.css')}}" />
     <style>
         .display-none{
             display: none!important;
@@ -16,7 +16,7 @@
     <div class="content container-fluid">
         <div class="d-flex justify-content-between mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/app.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/app.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('System Addon')}}
                 </span>
@@ -24,7 +24,7 @@
             <div class="text-primary d-flex align-items-center gap-3 font-weight-bolder" data-toggle="modal" data-target="#settingModal">
                 {{ translate('How the Setting Works') }}
                 <div class="ripple-animation" >
-                    <img src="{{asset('/public/assets/admin/img/info.svg')}}" class="svg" alt="">
+                    <img src="{{asset('/assets/admin/img/info.svg')}}" class="svg" alt="">
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
                             <div class="mt-5 card px-3 py-2 d--none" id="progress-bar">
                                 <div class="d-flex flex-wrap align-items-center gap-3">
                                     <div class="">
-                                        <img width="24" src="{{asset('/public/assets/admin/img/zip.png')}}" alt="">
+                                        <img width="24" src="{{asset('/assets/admin/img/zip.png')}}" alt="">
                                     </div>
                                     <div class="flex-grow-1 text-start">
                                         <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
@@ -103,7 +103,7 @@
 
                             <div class="d-flex gap-2 gap-sm-3 align-items-center">
                                 @if ($data['is_published'] == 0)
-                                    <button class="text-danger bg-transparent p-0 border-0 mr-2" data-toggle="modal" data-target="#deleteThemeModal_{{$key}}"><img src="{{asset('public/assets/admin/img/delete.svg')}}" class="svg" alt=""></button>
+                                    <button class="text-danger bg-transparent p-0 border-0 mr-2" data-toggle="modal" data-target="#deleteThemeModal_{{$key}}"><img src="{{asset('assets/admin/img/delete.svg')}}" class="svg" alt=""></button>
                                     <div class="modal fade" id="deleteThemeModal_{{$key}}" tabindex="-1" aria-labelledby="deleteThemeModal_{{$key}}" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
@@ -117,7 +117,7 @@
                                                 </div>
                                                 <div class="modal-body px-4 px-sm-5 text-center">
                                                     <div class="mb-3 text-center">
-                                                        <img width="75" src="{{asset('public/assets/admin/img/delete.png')}}" alt="">
+                                                        <img width="75" src="{{asset('assets/admin/img/delete.png')}}" alt="">
                                                     </div>
 
                                                     <h3>{{ translate('are_you_sure_you_want_to_delete_the'.' ') }} {{ $data['name'] }}?</h3>
@@ -132,7 +132,7 @@
                                     </div>
                                 @endif
 
-                                <button class="{{$data['is_published'] == 1 ? 'checkbox-color-primary' : 'text-muted'}} bg-transparent p-0 border-0" data-toggle="modal" data-target="#shiftThemeModal_{{$key}}"><img src="{{asset('public/assets/admin/img/check.svg')}}" class="svg" alt=""></button>
+                                <button class="{{$data['is_published'] == 1 ? 'checkbox-color-primary' : 'text-muted'}} bg-transparent p-0 border-0" data-toggle="modal" data-target="#shiftThemeModal_{{$key}}"><img src="{{asset('assets/admin/img/check.svg')}}" class="svg" alt=""></button>
 
                                 <div class="modal fade" id="shiftThemeModal_{{$key}}" tabindex="-1" aria-labelledby="shiftThemeModalLabel_{{$key}}" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
@@ -147,7 +147,7 @@
                                             </div>
                                             <div class="modal-body px-4 px-sm-5 text-center">
                                                 <div class="mb-3 text-center">
-                                                    <img width="75" src="{{asset('public/assets/admin/img/shift.png')}}" alt="">
+                                                    <img width="75" src="{{asset('assets/admin/img/shift.png')}}" alt="">
                                                 </div>
 
                                                 <h3>{{ translate('are_you_sure?') }}</h3>
@@ -190,7 +190,7 @@
 
                             <div class="aspect-ration-3:2 border border-color-primary-light radius-10">
                                 <img class="img-fit radius-10"
-                                     onerror='this.src="{{asset('public/assets/admin/img/placeholder.png')}}"'
+                                     onerror='this.src="{{asset('assets/admin/img/placeholder.png')}}"'
                                      src="{{asset($addon.'/public/addon.png')}}">
                             </div>
                         </div>
@@ -218,7 +218,7 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="d-flex flex-column align-items-center mx-w450 mx-auto">
-                                                <img src="{{asset('public/assets/admin/img/addon_setting.png')}}" loading="lazy"
+                                                <img src="{{asset('assets/admin/img/addon_setting.png')}}" loading="lazy"
                                                      alt="" class="dark-support rounded mb-4">
                                                 <h3 class="mb-4">{{translate('To Integrate add-on to your system please follow the instruction below')}}</h3>
 
@@ -245,7 +245,7 @@
 
 @push('script_2')
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script href="{{ asset('public/assets/admin/vendor/swiper/swiper-bundle.min.js')}}"></script>
+    <script href="{{ asset('assets/admin/vendor/swiper/swiper-bundle.min.js')}}"></script>
 
     <script>
         $("img.svg").each(function () {

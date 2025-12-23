@@ -10,7 +10,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{ asset('public/assets/admin/img/icons/deliveryman.png') }}"
+                <img width="20" class="avatar-img" src="{{ asset('assets/admin/img/icons/deliveryman.png') }}"
                     alt="">
                 <span class="page-header-title">
                     {{ translate('Deliveryman_List') }}
@@ -59,7 +59,7 @@
                     </div>
                     <div class="resturant-icon">
                         <img class="" width="38"
-                            src="{{ asset('public/assets/admin/img/deliveryman/total.png') }}" alt="">
+                            src="{{ asset('assets/admin/img/deliveryman/total.png') }}" alt="">
                     </div>
 
                 </div>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="resturant-icon">
                         <img class="" width="38"
-                            src="{{ asset('public/assets/admin/img/deliveryman/active.png') }}" alt="">
+                            src="{{ asset('assets/admin/img/deliveryman/active.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="resturant-icon">
                         <img class="" width="38"
-                            src="{{ asset('public/assets/admin/img/deliveryman/inactive.png') }}" alt="">
+                            src="{{ asset('assets/admin/img/deliveryman/inactive.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
                                                     'date' =>  request()->get('date'),
                                                 ]) }}" tabindex="7">
                                                 <img width="14"
-                                                    src="{{ asset('public/assets/admin/img/icons/excel.png') }}"
+                                                    src="{{ asset('assets/admin/img/icons/excel.png') }}"
                                                     alt="">
                                                 {{ translate('Excel') }}
                                             </a>
@@ -259,7 +259,7 @@
                         @if (count($deliverymen) == 0)
                             <div class="text-center p-4">
                                 <img class="w-120px mb-3"
-                                    src="{{ asset('public/assets/admin/svg/illustrations/sorry.svg') }}"
+                                    src="{{ asset('assets/admin/svg/illustrations/sorry.svg') }}"
                                     alt="{{ translate('image') }}">
                                 <p class="mb-0">{{ translate('No_data_to_show') }}</p>
                             </div>

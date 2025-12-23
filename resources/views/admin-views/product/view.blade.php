@@ -3,14 +3,14 @@
 @section('title', translate('Product Preview'))
 
 @push('css_or_js')
-    <link rel="stylesheet" href="{{asset('/public/assets/admin/css/lightbox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/lightbox.min.css')}}">
 @endpush
 
 @section('content')
     <div class="content container-fluid">
         <div class="d-flex flex-wrap justify-content-between gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/bulk_import.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/bulk_import.png')}}" alt="">
                 <span class="page-header-title">
                     {{ Str::limit($product['name'], 30) }}
                 </span>
@@ -99,11 +99,11 @@
 
                                                 <div class="mb-2">
                                                     <span class="badge badge-soft-secondary fz-12 px-3 py-2 text-title">
-                                                        <img width="13" class="mr-1" src="{{asset('public/assets/admin/img/icons/leaf.svg')}}">{{ translate($product->product_type) }}
+                                                        <img width="13" class="mr-1" src="{{asset('assets/admin/img/icons/leaf.svg')}}">{{ translate($product->product_type) }}
                                                     </span>
                                                     @if($product['halal_status'])
                                                         <span class="badge badge-soft-secondary fz-12 px-3 py-2 text-title">
-                                                            <img width="13" class="mr-1" src="{{asset('public/assets/admin/img/halal-tags.png')}}">{{ translate("Halal") }}
+                                                            <img width="13" class="mr-1" src="{{asset('assets/admin/img/halal-tags.png')}}">{{ translate("Halal") }}
                                                         </span>
                                                     @endif
                                                 </div>
@@ -124,11 +124,11 @@
                                             </div>
                                             <div class="mb-2">
                                                     <span class="badge badge-soft-secondary fz-12 px-3 py-2 text-title">
-                                                        <img width="13" class="mr-1" src="{{asset('public/assets/admin/img/icons/leaf.svg')}}">{{ translate($product->product_type) }}
+                                                        <img width="13" class="mr-1" src="{{asset('assets/admin/img/icons/leaf.svg')}}">{{ translate($product->product_type) }}
                                                     </span>
                                                 @if($product['halal_status'])
                                                     <span class="badge badge-soft-secondary fz-12 px-3 py-2 text-title">
-                                                        <img width="13" class="mr-1" src="{{asset('public/assets/admin/img/halal-tags.png')}}">{{ translate("Halal") }}
+                                                        <img width="13" class="mr-1" src="{{asset('assets/admin/img/halal-tags.png')}}">{{ translate("Halal") }}
                                                     </span>
                                                 @endif
                                             </div>
@@ -394,7 +394,7 @@
                                                  alt="">
                                         @else
                                             <img class="avatar-img" width="75" height="75"
-                                                 src="{{ asset('public/assets/admin/img/160x160/img1.jpg') }}"
+                                                 src="{{ asset('assets/admin/img/160x160/img1.jpg') }}"
                                                  alt="">
                                         @endif
 
@@ -453,7 +453,7 @@
                                             if (\Illuminate\Support\Facades\Storage::disk('public')->exists('review/' . $item)) {
                                                 $images[$k] = asset('storage/app/public/review/' . $item);
                                             } else {
-                                                $images[$k] = asset('public/assets/admin/img/160x160/img2.jpg');
+                                                $images[$k] = asset('assets/admin/img/160x160/img2.jpg');
                                             }
                                         }
                                     ?>

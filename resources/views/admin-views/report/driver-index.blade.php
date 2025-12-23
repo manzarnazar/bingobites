@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{ asset('public/assets/admin/img/icons/takeaway.png') }}"
+                <img width="20" class="avatar-img" src="{{ asset('assets/admin/img/icons/takeaway.png') }}"
                     alt="">
                 <span class="page-header-title">
                     {{ translate('Deliveryman_Report') }}
@@ -81,7 +81,7 @@
                                     <li>
                                         <a type="submit" class="dropdown-item d-flex align-items-center gap-2"
                                             href="#">
-                                            <img width="14" src="{{ asset('public/assets/admin/img/icons/excel.png') }}"
+                                            <img width="14" src="{{ asset('assets/admin/img/icons/excel.png') }}"
                                                 alt="">
                                             Excel
                                         </a>
@@ -119,7 +119,7 @@
                                 <td class="max-w300">
                                     <a class="text-dark media align-items-center gap-2" href="#">
                                         <div class="avatar">
-                                            <img src="{{ asset('public/assets/admin/img//160x160/img1.jpg') }}"
+                                            <img src="{{ asset('assets/admin/img//160x160/img1.jpg') }}"
                                                 class="rounded-circle img-fit" alt="">
                                         </div>
                                         <div class="media-body text-truncate">
@@ -193,7 +193,7 @@
                     <div class="d-flex justify-content-between gap-3 flex-wrap mt-5 w-100">
                         <div class="media gap-3">
                             <img class="rounded-circle" width="100" height="100"
-                                src="{{ asset('public/assets/admin/img/160x160/img1.jpg') }}" alt="Image Description">
+                                src="{{ asset('assets/admin/img/160x160/img1.jpg') }}" alt="Image Description">
                             <div class="media-body">
                                 <h3 class="fz-22 text-dark mb-0">
                                     Tomas Porter
@@ -220,7 +220,7 @@
                                     </div>
                                     <div class="resturant-icon round-bg bg-FF5B7F">
                                         <img class="" width="16"
-                                            src="{{ asset('public/assets/admin/img/modal/deliveryman-report/pending.svg') }}"
+                                            src="{{ asset('assets/admin/img/modal/deliveryman-report/pending.svg') }}"
                                             alt="">
                                     </div>
 
@@ -236,7 +236,7 @@
                                     </div>
                                     <div class="resturant-icon round-bg bg-BF83FF">
                                         <img class="" width="16"
-                                            src="{{ asset('public/assets/admin/img/modal/deliveryman-report/out-for-delivery.svg') }}"
+                                            src="{{ asset('assets/admin/img/modal/deliveryman-report/out-for-delivery.svg') }}"
                                             alt="">
                                     </div>
                                 </div>
@@ -251,7 +251,7 @@
                                     </div>
                                     <div class="resturant-icon round-bg bg-3CD856">
                                         <img class="" width="16"
-                                            src="{{ asset('public/assets/admin/img/modal/deliveryman-report/completed.svg') }}"
+                                            src="{{ asset('assets/admin/img/modal/deliveryman-report/completed.svg') }}"
                                             alt="">
                                     </div>
                                 </div>
@@ -267,7 +267,7 @@
                                     </div>
                                     <div class="resturant-icon round-bg bg-53B65A">
                                         <img class="" width="16"
-                                            src="{{ asset('public/assets/admin/img/modal/deliveryman-report/earned.svg') }}"
+                                            src="{{ asset('assets/admin/img/modal/deliveryman-report/earned.svg') }}"
                                             alt="">
                                     </div>
                                 </div>
@@ -294,7 +294,7 @@
                                 <li>
                                     <a type="submit" class="dropdown-item d-flex align-items-center gap-2"
                                         href="#">
-                                        <img width="14" src="{{ asset('public/assets/admin/img/icons/excel.png') }}"
+                                        <img width="14" src="{{ asset('assets/admin/img/icons/excel.png') }}"
                                             alt="">
                                         Excel
                                     </a>
@@ -362,9 +362,9 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin') }}/vendor/chart.js/dist/Chart.min.js"></script>
-    <script src="{{ asset('public/assets/admin') }}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
-    <script src="{{ asset('public/assets/admin') }}/js/hs.chartjs-matrix.js"></script>
+    <script src="{{ asset('assets/admin') }}/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="{{ asset('assets/admin') }}/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
+    <script src="{{ asset('assets/admin') }}/js/hs.chartjs-matrix.js"></script>
 
     <script>
         "use strict";

@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{ asset('public/assets/admin/img/icons/deliveryman.png') }}"
+                <img width="20" class="avatar-img" src="{{ asset('assets/admin/img/icons/deliveryman.png') }}"
                     alt="">
                 <span class="page-header-title">
                     {{ translate('Update_Deliveryman') }}
@@ -221,8 +221,8 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/read-url.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/read-url.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/spartan-multi-image-picker.js') }}"></script>
     <script>
         "use strict";
 
@@ -267,7 +267,7 @@
                 groupClassName: 'spartan_item_wrapper mb-0',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{ asset('public/assets/admin/img/document-upload.svg') }}',
+                    image: '{{ asset('assets/admin/img/document-upload.svg') }}',
                     width: '34px',
                 },
                 dropFileLabel: `

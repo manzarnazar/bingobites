@@ -26,7 +26,7 @@
                                 @php($image_array = json_decode($con->image, true))
                                 @foreach($image_array as $image)
                                     <a href="{{$image}}" data-lightbox="{{$con->id . $image}}" >
-                                        <img class="rounded" src="{{$image}}" onerror="this.src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'" />
+                                        <img class="rounded" src="{{$image}}" onerror="this.src='{{asset('assets/admin/img/900x400/img1.jpg')}}'" />
                                     </a><br>
                                @endforeach
                                 </div>
@@ -51,7 +51,7 @@
                                     @php($image_url = $image)
                                     <div class="col-12 @if(count(json_decode($con->image, true)) > 1) col-md-6 @endif">
                                         <a href="{{asset('storage/app/public/conversation').'/'.$image_url}}" data-lightbox="{{$con->id . $image_url }}" >
-                                            <img class="rounded" src="{{asset('storage/app/public/conversation').'/'.$image_url}}" onerror="this.src='{{asset('public/assets/admin/img/900x400/img1.jpg')}}'" />
+                                            <img class="rounded" src="{{asset('storage/app/public/conversation').'/'.$image_url}}" onerror="this.src='{{asset('assets/admin/img/900x400/img1.jpg')}}'" />
                                         </a><br>
                                     </div>
                                 @endforeach
@@ -92,8 +92,8 @@
     </div>
 </form>
 
-<script src="{{asset('public/assets/admin')}}/js/tags-input.min.js"></script>
-<script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+<script src="{{asset('assets/admin')}}/js/tags-input.min.js"></script>
+<script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
 
 <script>
     "use strict";

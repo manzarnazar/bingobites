@@ -249,7 +249,7 @@
                                         @empty
                                             <tr>
                                                 <td colspan="4" class="text-center">
-                                                    <img class="my-4" src="{{ asset('public/assets/admin/svg/components/map.svg') }}" alt="{{ translate('info icon') }}">
+                                                    <img class="my-4" src="{{ asset('assets/admin/svg/components/map.svg') }}" alt="{{ translate('info icon') }}">
                                                     <h4>{{ translate('Create Area/Zip Code') }}</h4>
                                                     <p>{{ translate('Create area/zip code and setup delivery charge') }}</p>
                                                 </td>
@@ -361,10 +361,10 @@
                 @csrf
                 <div class="modal-body pt-0">
                     <div class="text-center mb-4">
-                        <img src="{{ asset('public/assets/admin/svg/components/file.svg') }}" alt="{{ translate('image') }}" class="mb-4">
+                        <img src="{{ asset('assets/admin/svg/components/file.svg') }}" alt="{{ translate('image') }}" class="mb-4">
                         <h4>{{ translate('Add New or Replace in the List') }}</h4>
                         <p>{{ translate('You can download the example file to understand how the file must be filled with proper data.') }}
-                            <a href="{{asset('public/assets/area_bulk_format.xlsx')}}" download="" class="fz-16 btn-link">
+                            <a href="{{asset('assets/area_bulk_format.xlsx')}}" download="" class="fz-16 btn-link">
                                 {{translate('Download Format')}}
                             </a>
                         </p>
@@ -375,13 +375,13 @@
                     <div class="image-uploader mt-4 mx-auto">
                         <div class="image-uploader__zip-preview">
                             <input type="file" name="area_file" class="image-uploader__zip" id="input-file" accept=".xlsx, .xls" required>
-                            <img src="{{asset('/public/assets/admin/img/xlsx-file-upload.svg')}}" alt="">
+                            <img src="{{asset('/assets/admin/img/xlsx-file-upload.svg')}}" alt="">
                             <div>{{ translate('Select File') }}</div>
                         </div>
                         <div class="mt-2 text-center">{{ translate('Format') }} : xlsx, xls <br> {{ translate('Size') }} : {{ translate('Max 2 MB') }}</div>
                         <div class="image-uploader__title collapse">
                             <div class="d-flex flex-wrap gap-2">
-                                <img src="{{asset('/public/assets/admin/img/xlsx-file-upload.svg')}}" width="20" alt="">
+                                <img src="{{asset('/assets/admin/img/xlsx-file-upload.svg')}}" width="20" alt="">
                                 <div class="w-0 flex-grow-1 text-dark">
                                     <div class="d-flex flex-wrap">
                                         <div class="w-0 flex-grow-1 name"></div>
@@ -423,7 +423,7 @@
                 </button>
             </div>
             <div class="modal-body text-center">
-                <img src="{{ asset('public/assets/admin/svg/components/info.svg') }}" alt="{{ translate('image') }}" class="mb-4">
+                <img src="{{ asset('assets/admin/svg/components/info.svg') }}" alt="{{ translate('image') }}" class="mb-4">
                 <h4>{{ translate('Are You Sure') }}?</h4>
                 <p>{{ translate('Do you want to change the delivery charge setup? You can only use one setup at a time. When you switch to a new setup, the previous one is automatically deactivated.') }}</p>
             </div>
@@ -445,7 +445,7 @@
             </div>
             <div class="modal-body">
                 <div class="text-center">
-                    <img src="{{ asset('public/assets/admin/svg/components/info.svg') }}" alt="{{ translate('image') }}" class="mb-4">
+                    <img src="{{ asset('assets/admin/svg/components/info.svg') }}" alt="{{ translate('image') }}" class="mb-4">
                     <h4>{{ translate('Are You Sure') }}?</h4>
                     <p>{{ translate('Do you want to change the delivery charge setup? You can only use one setup at a time. When you switch to a new setup, the previous one is automatically deactivated.') }}</p>
 
@@ -496,7 +496,7 @@
                 </button>
             </div>
             <div class="modal-body text-center">
-                <img src="{{ asset('public/assets/admin/svg/components/info.svg') }}" alt="{{ translate('image') }}" class="mb-4">
+                <img src="{{ asset('assets/admin/svg/components/info.svg') }}" alt="{{ translate('image') }}" class="mb-4">
                 <h4>{{ translate('To Turn Off, Select an Option Below.') }}</h4>
                 <p>{{ translate('If you want to turn off all setup, you need to choose one of the options below and continue. Without this, the delivery charge can’t work.') }}</p>
 
@@ -546,7 +546,7 @@
                 </button>
             </div>
             <div class="modal-body text-center">
-                <img src="{{ asset('public/assets/admin/svg/components/info.svg') }}" alt="{{ translate('image') }}" class="mb-4">
+                <img src="{{ asset('assets/admin/svg/components/info.svg') }}" alt="{{ translate('image') }}" class="mb-4">
                 <h4>{{ translate('Are You Sure') }}?</h4>
                 <p>{{ translate('Do you want to turn off the free delivery over amount status') }}?</p>
             </div>

@@ -144,7 +144,7 @@ class ConfigController extends Controller
                 'kitchen_image_url' => asset('storage/app/public/kitchen'),
                 'branch_image_url' => asset('storage/app/public/branch'),
                 'gateway_image_url' => asset('storage/app/public/payment_modules/gateway_image'),
-                'payment_image_url' => asset('public/assets/admin/img/payment'),
+                'payment_image_url' => asset('assets/admin/img/payment'),
                 'cuisine_image_url' => asset('storage/app/public/cuisine'),
             ],
             'currency_symbol' => $currencySymbol,

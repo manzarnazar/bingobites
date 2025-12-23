@@ -10,7 +10,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/product.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/product.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Product_List')}}
                 </span>
@@ -45,7 +45,7 @@
                                         <ul class="dropdown-menu dropdown-menu-right">
                                             <li>
                                                 <a type="submit" class="dropdown-item d-flex align-items-center gap-2" href="{{route('admin.product.excel-import', ['search' => $search])}}">
-                                                    <img width="14" src="{{asset('public/assets/admin/img/icons/excel.png')}}" alt="">
+                                                    <img width="14" src="{{asset('assets/admin/img/icons/excel.png')}}" alt="">
                                                     {{translate('Excel')}}
                                                 </a>
                                             </li>
@@ -150,7 +150,7 @@
 
                         @if(count($products) == 0)
                             <div class="text-center p-4">
-                                <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                                <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                                 <p class="mb-0">{{translate('No_data_to_show')}}</p>
                             </div>
                         @endif

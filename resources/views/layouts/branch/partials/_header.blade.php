@@ -5,10 +5,10 @@
                 @php($restaurantLogo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value)
                 <a class="navbar-brand" href="{{route('branch.dashboard')}}" aria-label="">
                     <img class="navbar-brand-logo" style="object-fit: contain;"
-                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                         onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                          src="{{asset('storage/app/public/restaurant/'.$restaurantLogo)}}" alt="{{ translate('logo') }}">
                     <img class="navbar-brand-logo-mini" style="object-fit: contain;"
-                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                         onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                          src="{{asset('storage/app/public/restaurant/'.$restaurantLogo)}}" alt="{{ translate('logo') }}">
                 </a>
             </div>
@@ -35,7 +35,7 @@
                                         <a class="topbar-link dropdown-toggle d-flex gap-2 align-items-center font-weight-bold dropdown-toggle-empty lang-country-flag" href="#" data-toggle="dropdown">
                                             @foreach($lang as $data)
                                                 @if($data['code']==$local)
-                                                    <img src="{{asset('public/assets/admin/img/google_translate_logo.png')}}" alt=""><span>{{$data['name']}}</span>
+                                                    <img src="{{asset('assets/admin/img/google_translate_logo.png')}}" alt=""><span>{{$data['name']}}</span>
                                                 @endif
                                             @endforeach
                                         </a>
@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="avatar avatar-sm avatar-circle">
                                     <img class="avatar-img"
-                                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                         onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                          src="{{asset('storage/app/public/branch')}}/{{auth('branch')->user()->image}}"
                                          alt="Image Description">
                                     <span class="avatar-status avatar-sm-status avatar-status-success"></span>
@@ -93,7 +93,7 @@
                                     <div class="media align-items-center">
                                         <div class="avatar avatar-sm avatar-circle mr-2">
                                             <img class="avatar-img"
-                                                 onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                 onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                                  src="{{asset('storage/app/public/branch')}}/{{auth('branch')->user()->image}}"
                                                  alt="{{ translate('branch image') }}">
                                         </div>

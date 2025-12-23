@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/third-party.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/third-party.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('third_party')}}
                 </span>
@@ -25,7 +25,7 @@
                             <div class="d-flex justify-content-between align-items-center w-100">
                                 <div class="__social-media-login-top flex-grow-1">
                                     <h5 class="card-title">
-                                        <img src="{{asset('/public/assets/admin/img/apple.png')}}" class="mr-1 w--20" alt="">
+                                        <img src="{{asset('/assets/admin/img/apple.png')}}" class="mr-1 w--20" alt="">
                                         {{translate('Apple Login')}}
                                     </h5>
                                 </div>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="modal-body pb-0"><b></b>
                     <div class="text-center mb-20">
-                        <img src="{{asset('/public/assets/admin/img/modal/apple.png')}}" alt="" class="mb-20">
+                        <img src="{{asset('/assets/admin/img/modal/apple.png')}}" alt="" class="mb-20">
                         <h5 class="modal-title">{{translate('apple_api_set_instruction')}}</h5>
                     </div>
                     <ol>

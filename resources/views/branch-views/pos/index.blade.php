@@ -7,7 +7,7 @@
             <div class="col-md-12">
                 <div id="loading" class="d--none">
                     <div class="loading-inner">
-                        <img width="200" src="{{asset('public/assets/admin/img/loader.gif')}}">
+                        <img width="200" src="{{asset('assets/admin/img/loader.gif')}}">
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                                         <div class="input-group input-group-merge input-group-flush border rounded">
                                             <div class="input-group-prepend pl-2">
                                                 <div class="input-group-text">
-                                                    <img width="13" src="{{asset('public/assets/admin/img/icons/search.png')}}" alt="">
+                                                    <img width="13" src="{{asset('assets/admin/img/icons/search.png')}}" alt="">
                                                 </div>
                                             </div>
                                             <input id="datatableSearch" type="search" value="{{$keyword?$keyword:''}}" name="search" class="form-control border-0" placeholder="{{translate('Search_here')}}" aria-label="Search here">
@@ -384,10 +384,10 @@
 @push('script_2')
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script src="{{asset('public/assets/admin')}}/js/vendor.min.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/theme.min.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/sweet_alert.js"></script>
-<script src="{{asset('public/assets/admin')}}/js/toastr.js"></script>
+<script src="{{asset('assets/admin')}}/js/vendor.min.js"></script>
+<script src="{{asset('assets/admin')}}/js/theme.min.js"></script>
+<script src="{{asset('assets/admin')}}/js/sweet_alert.js"></script>
+<script src="{{asset('assets/admin')}}/js/toastr.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key={{ \App\Model\BusinessSetting::where('key', 'map_api_client_key')->first()?->value }}&libraries=places&v=3.51"></script>
 
 @if ($errors->any())
@@ -1065,7 +1065,7 @@
     });
 </script>
 <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('public/assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="{{asset('assets/admin')}}/vendor/babel-polyfill/polyfill.min.js"><\/script>');
 </script>
 @endpush
 

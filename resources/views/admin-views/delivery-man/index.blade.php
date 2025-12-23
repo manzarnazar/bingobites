@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{ asset('public/assets/admin/img/icons/deliveryman.png') }}"
+                <img width="20" class="avatar-img" src="{{ asset('assets/admin/img/icons/deliveryman.png') }}"
                     alt="">
                 <span class="page-header-title">
                     {{ translate('add_New_Deliveryman') }}
@@ -63,7 +63,7 @@
                                             <input type="file" name="image" class="upload-file__input" accept=".jpg, .jpeg, .png" tabindex="5">
                                             <label class="upload-file-wrapper d-flex justify-content-center align-items-center m-auto">
                                                 <div class="upload-file-textbox text-center">
-                                                    <img width="34" height="34" src="{{ asset('public/assets/admin/img/document-upload.svg') }}" alt="">
+                                                    <img width="34" height="34" src="{{ asset('assets/admin/img/document-upload.svg') }}" alt="">
                                                     <h6 class="mt-2 font-weight-semibold text-center">
                                                         <span class="text-c2">{{ translate('Click to upload') }}</span><br>{{ translate('or drag and drop') }}
                                                     </h6>
@@ -198,8 +198,8 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/read-url.js') }}"></script>
-    <script src="{{ asset('public/assets/admin/js/spartan-multi-image-picker.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/read-url.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/spartan-multi-image-picker.js') }}"></script>
     <script>
         "use strict";
 
@@ -235,7 +235,7 @@
                 groupClassName: 'flex-item mb-0',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{ asset('public/assets/admin/img/document-upload.svg') }}',
+                    image: '{{ asset('assets/admin/img/document-upload.svg') }}',
                     width: '34px',
                 },
                 dropFileLabel: `

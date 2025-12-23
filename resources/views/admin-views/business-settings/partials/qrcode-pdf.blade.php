@@ -10,12 +10,12 @@
                     <div class="qr-area">
                         <div class="left-side pr-xl-4">
                             @php($restaurantLogo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()?->value)
-                            <div class="qr-wrapper" tyle="background: url({{asset('public/assets/admin/img/qr-bg.png')}}) no-repeat scroll 0% 0% / 100% 100% !important; -webkit-print-color-adjust: exact !important; color-adjust: exact !important; print-color-adjust: exact !important;">
+                            <div class="qr-wrapper" tyle="background: url({{asset('assets/admin/img/qr-bg.png')}}) no-repeat scroll 0% 0% / 100% 100% !important; -webkit-print-color-adjust: exact !important; color-adjust: exact !important; print-color-adjust: exact !important;">
 
                                 <div class="d-flex justify-content-center">
                                     <a href="" class="qr-logo">
                                         <img src="{{asset('storage/app/public/qrcode/'.$data['logo'])}}" class="mw-100"
-                                             onerror="this.src='{{asset('public/assets/admin/img/logo2.png')}}'" alt="">
+                                             onerror="this.src='{{asset('assets/admin/img/logo2.png')}}'" alt="">
                                     </a>
                                 </div>
 
@@ -27,7 +27,7 @@
 
                                 <div class="text-center mt-4">
                                     <div>
-                                        <img src="{{asset('public/assets/admin/img/scan-me.png')}}" class="mw-100" alt="">
+                                        <img src="{{asset('assets/admin/img/scan-me.png')}}" class="mw-100" alt="">
                                     </div>
                                     <div class="my-3">
                                         {!! $code !!}

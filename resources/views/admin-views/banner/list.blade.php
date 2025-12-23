@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/banner.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/banner.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Banner_Setup')}}
                 </span>
@@ -63,7 +63,7 @@
                                             <div class="upload-file cmn_focus rounded">
                                                 <input type="file" name="image" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" class="upload-file__input" tabindex="5">
                                                 <div class="upload-file__img_drag upload-file__img max-h-200px overflow-hidden">
-                                                    <img width="465" id="viewer" src="{{asset('public/assets/admin/img/icons/upload_img2.png')}}" alt="">
+                                                    <img width="465" id="viewer" src="{{asset('assets/admin/img/icons/upload_img2.png')}}" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -173,7 +173,7 @@
 
                         @if(count($banners) == 0)
                             <div class="text-center p-4">
-                                <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                                <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                                 <p class="mb-0">{{translate('No_data_to_show')}}</p>
                             </div>
                         @endif

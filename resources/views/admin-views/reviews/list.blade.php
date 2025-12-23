@@ -4,7 +4,7 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{asset('/public/assets/admin/css/lightbox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/assets/admin/css/lightbox.min.css')}}">
 
 @endpush
 
@@ -12,7 +12,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/review.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/review.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('product_review')}}
                 </span>
@@ -107,7 +107,7 @@
                                                         if (\Illuminate\Support\Facades\Storage::disk('public')->exists('review/' . $item)) {
                                                             $images[$k] = asset('storage/app/public/review/' . $item);
                                                         } else {
-                                                            $images[$k] = asset('public/assets/admin/img/160x160/img2.jpg');
+                                                            $images[$k] = asset('assets/admin/img/160x160/img2.jpg');
                                                         }
                                                     }
                                                     ?>
@@ -133,7 +133,7 @@
 
                         @if(count($reviews) == 0)
                             <div class="text-center p-4">
-                                <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                                <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                                 <p class="mb-0">{{translate('No_data_to_show')}}</p>
                             </div>
                         @endif

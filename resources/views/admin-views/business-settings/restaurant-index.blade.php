@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/business_setup2.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/business_setup2.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('business_setup')}}
                 </span>
@@ -137,7 +137,7 @@
 
                                 <div class="text-center mt-3">
                                     <img style="height: 100px;border: 1px solid; border-radius: 10px;" id="viewer"
-                                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                         onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
                                          src="{{asset('storage/app/public/restaurant/'.$logo)}}" alt="logo image"/>
                                 </div>
                             </div>
@@ -156,7 +156,7 @@
 
                                 <div class="text-center mt-3">
                                     <img style="height: 100px;border: 1px solid; border-radius: 10px;" id="viewer_2"
-                                         onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                                         onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
                                          src="{{asset('storage/app/public/restaurant/'.$fav_icon)}}" alt="fav"/>
                                 </div>
                             </div>
@@ -845,7 +845,7 @@
                                     <input name="halal_tag_status"
                                         type="checkbox"
                                         class="show-global-confirmation-modal switcher_input"
-                                        data-image="{{ asset('public/assets/admin/img/halal-tags.png') }}" tabindex="25"
+                                        data-image="{{ asset('assets/admin/img/halal-tags.png') }}" tabindex="25"
                                         @if($halalTagStatus == 1) checked @endif>
                                     <span class="switcher_control"></span>
                                 </label>
@@ -1158,7 +1158,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <div class="my-4">
-                            <img src="{{ asset('public/assets/admin/svg/components/map-icon.svg') }}" alt="Checked Icon">
+                            <img src="{{ asset('assets/admin/svg/components/map-icon.svg') }}" alt="Checked Icon">
                         </div>
                         <div class="my-4">
                             <h4>{{ translate('Turn off google Map') }}?</h4>
@@ -1185,7 +1185,7 @@
                 <div class="modal-body">
                     <div class="">
                         <div class="text-center mb-5">
-                            <img src="{{ asset('public/assets/admin/svg/components/map-icon.svg') }}" alt="Unchecked Icon" class="mb-5">
+                            <img src="{{ asset('assets/admin/svg/components/map-icon.svg') }}" alt="Unchecked Icon" class="mb-5">
                             <h4>{{ translate('Are You Sure') }}?</h4>
                             <p>{{ translate('Do you want to turn off Google Maps? Turning off the Google Maps setup will affect the following settings') }}:</p>
                         </div>
@@ -1193,25 +1193,25 @@
                         <div class="row g-2">
                             <div class="col-6">
                                 <a class="d-flex align-items-center border rounded px-3 py-2 gap-2" href="{{ route('admin.customer.list') }}" target="_blank">
-                                    <img src="{{ asset('public/assets/admin/svg/components/people.svg') }}" width="21" alt="">
+                                    <img src="{{ asset('assets/admin/svg/components/people.svg') }}" width="21" alt="">
                                     <span>{{ translate('Customer Location') }}</span>
                                 </a>
                             </div>
                             <div class="col-6">
                                 <a class="d-flex align-items-center border rounded px-3 py-2 gap-2" href="{{ route('admin.branch.list') }}" target="_blank">
-                                    <img src="{{ asset('public/assets/admin/svg/components/branch.svg') }}" width="21" alt="">
+                                    <img src="{{ asset('assets/admin/svg/components/branch.svg') }}" width="21" alt="">
                                     <span>{{ translate('Branch Coverage Area') }}</span>
                                 </a>
                             </div>
                             <div class="col-6">
                                 <a class="d-flex align-items-center border rounded px-3 py-2 gap-2" href="{{ route('admin.delivery-man.list') }}" target="_blank">
-                                    <img src="{{ asset('public/assets/admin/svg/components/delivery-car.svg') }}" width="21" alt="">
+                                    <img src="{{ asset('assets/admin/svg/components/delivery-car.svg') }}" width="21" alt="">
                                     <span>{{ translate('Deliveryman Location') }}</span>
                                 </a>
                             </div>
                             <div class="col-6">
                                 <a class="d-flex align-items-center border rounded px-3 py-2 gap-2" href="{{ route('admin.business-settings.restaurant.delivery-fee-setup') }}" target="_blank">
-                                    <img src="{{ asset('public/assets/admin/svg/components/delivery-charge.svg') }}" width="21" alt="">
+                                    <img src="{{ asset('assets/admin/svg/components/delivery-charge.svg') }}" width="21" alt="">
                                     <span>{{ translate('Delivery Charge Setup') }}</span>
                                 </a>
                             </div>
@@ -1239,7 +1239,7 @@
                 <div class="modal-body">
                     <div class="text-center">
                         <div class="my-4">
-                            <img src="{{ asset('public/assets/admin/svg/components/map-icon.svg') }}" alt="Checked Icon">
+                            <img src="{{ asset('assets/admin/svg/components/map-icon.svg') }}" alt="Checked Icon">
                         </div>
                         <div class="my-4">
                             <h4>{{ translate('Turn on google Map') }}?</h4>

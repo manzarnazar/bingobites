@@ -3,7 +3,7 @@
 @section('title', translate('Employee Edit'))
 
 @push('css_or_js')
-    <link href="{{asset('public/assets/back-end')}}/css/select2.min.css" rel="stylesheet"/>
+    <link href="{{asset('assets/back-end')}}/css/select2.min.css" rel="stylesheet"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 @endpush
 
@@ -11,7 +11,7 @@
 <div class="content container-fluid">
     <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
         <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-            <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/employee.png')}}" alt="">
+            <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/employee.png')}}" alt="">
             <span class="page-header-title">
                 {{translate('Update_Employee')}}
             </span>
@@ -166,9 +166,9 @@
 @endsection
 
 @push('script_2')
-    <script src="{{asset('public/assets/back-end')}}/js/select2.min.js"></script>
-    <script src="{{asset('public/assets/admin/js/image-upload.js')}}"></script>
-    <script src="{{asset('public/assets/admin/js/spartan-multi-image-picker.js')}}"></script>
+    <script src="{{asset('assets/back-end')}}/js/select2.min.js"></script>
+    <script src="{{asset('assets/admin/js/image-upload.js')}}"></script>
+    <script src="{{asset('assets/admin/js/spartan-multi-image-picker.js')}}"></script>
     <script>
         "use strict";
 
@@ -188,7 +188,7 @@
                 groupClassName: 'col-6 col-lg-4 ',
                 maxFileSize: '',
                 placeholderImage: {
-                    image: '{{asset('public/assets/admin/img/400x400/img2.jpg')}}',
+                    image: '{{asset('assets/admin/img/400x400/img2.jpg')}}',
                     width: '100%'
                 },
                 dropFileLabel: "Drop Here",

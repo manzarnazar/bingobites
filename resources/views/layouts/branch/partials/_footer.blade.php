@@ -11,14 +11,14 @@
                     <li>
                         <a href="{{route('branch.settings')}}">
                             <span>{{translate('Profile')}}</span>
-                            <img width="12" class="avatar-img rounded-0" src="{{asset('public/assets/admin/img/icons/profile.png')}}" alt="{{ translate('profile_image') }}">
+                            <img width="12" class="avatar-img rounded-0" src="{{asset('assets/admin/img/icons/profile.png')}}" alt="{{ translate('profile_image') }}">
                         </a>
                     </li>
 
                     <li>
                         <a href="{{route('branch.dashboard')}}">
                             <span>{{translate('Home')}}</span>
-                            <img width="12" class="avatar-img rounded-0" src="{{asset('public/assets/admin/img/icons/home.png')}}" alt="{{ translate('image') }}">
+                            <img width="12" class="avatar-img rounded-0" src="{{asset('assets/admin/img/icons/home.png')}}" alt="{{ translate('image') }}">
                         </a>
                     </li>
                 </ul>

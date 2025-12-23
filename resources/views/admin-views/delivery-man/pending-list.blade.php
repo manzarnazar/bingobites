@@ -10,7 +10,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/deliveryman.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/deliveryman.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('New Joining Request')}}
                 </span>
@@ -104,7 +104,7 @@
                                                     @php($image_full_path = asset('storage/app/public/delivery-man'). '/' .$identification_image)
                                                     <div class="overflow-hidden">
                                                         <img class="cursor-pointer rounded img-fit custom-img-fit image-preview"
-                                                             onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'"
+                                                             onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'"
                                                              src="{{$image_full_path}}">
                                                     </div>
                                                 @endforeach
@@ -142,7 +142,7 @@
                         </div>
                         @if(count($deliverymen) == 0)
                             <div class="text-center p-4">
-                                <img class="w-120px mb-3" src="{{asset('/public/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
+                                <img class="w-120px mb-3" src="{{asset('/assets/admin/svg/illustrations/sorry.svg')}}" alt="Image Description">
                                 <p class="mb-0">{{translate('No_data_to_show')}}</p>
                             </div>
                         @endif
@@ -156,7 +156,7 @@
                 <div class="modal-content">
                     <div class="modal-body p-0">
                         <div data-dismiss="modal">
-                            <img onerror="this.src='{{asset('public/assets/admin/img/160x160/img1.jpg')}}'" alt=""
+                            <img onerror="this.src='{{asset('assets/admin/img/160x160/img1.jpg')}}'" alt=""
                                  class="" id="identification_image_element" width="100%">
                         </div>
                     </div>

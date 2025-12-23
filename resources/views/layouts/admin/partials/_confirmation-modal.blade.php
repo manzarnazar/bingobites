@@ -10,7 +10,7 @@
             <div class="modal-body">
                 <div class="text-center">
                     <div class="my-4">
-                        <img id="globalConfirmationModalImage" src="{{ asset('public/assets/admin/img/halal-tags.png') }}" alt="Checked Icon">
+                        <img id="globalConfirmationModalImage" src="{{ asset('assets/admin/img/halal-tags.png') }}" alt="Checked Icon">
                     </div>
                     <div class="my-4">
                         <h3 id="globalConfirmationModalTitle"></h3>

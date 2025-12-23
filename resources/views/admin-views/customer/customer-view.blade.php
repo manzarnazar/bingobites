@@ -7,7 +7,7 @@
         <div class="d-print-none pb-2">
             <div class="d-flex flex-wrap gap-2 align-items-center mb-3 border-bottom pb-3">
                 <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                    <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/customer.png')}}" alt="">
+                    <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/customer.png')}}" alt="">
                     <span class="page-header-title">
                         {{translate('customer_Details')}}
                     </span>
@@ -40,7 +40,7 @@
 
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="resturant-card bg--2">
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/1.png')}}" alt="{{translate('dashboard')}}">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/1.png')}}" alt="{{translate('dashboard')}}">
                     <div class="for-card-text font-weight-bold  text-uppercase mb-1">{{translate('wallet')}} {{translate('balance')}}</div>
                     <div class="for-card-count">{{Helpers::set_symbol($customer->wallet_balance??0)}}</div>
                 </div>
@@ -49,7 +49,7 @@
 
             <div class="col-lg-6 col-md-6 col-sm-6">
                 <div class="resturant-card bg--3">
-                    <img class="resturant-icon" src="{{asset('/public/assets/admin/img/dashboard/3.png')}}" alt="{{translate('dashboard')}}">
+                    <img class="resturant-icon" src="{{asset('/assets/admin/img/dashboard/3.png')}}" alt="{{translate('dashboard')}}">
                     <div class="for-card-text font-weight-bold  text-uppercase mb-1">{{translate('loyalty_point')}} {{translate('balance')}}</div>
                     <div class="for-card-count">{{$customer->point??0}}</div>
                 </div>
@@ -217,5 +217,5 @@
 @endsection
 
 @push('script_2')
-        <script src="{{asset('public/assets/admin/js/customer-view.js')}}"></script>
+        <script src="{{asset('assets/admin/js/customer-view.js')}}"></script>
 @endpush

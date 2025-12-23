@@ -9,7 +9,7 @@
             <div class="d-flex flex-wrap justify-content-between align-items-center __gap-15px">
                 <h1 class="page-header-title mr-3 mb-0">
                     <span class="page-header-icon">
-                        <img src="{{ asset('public/assets/admin/img/email-setting.png') }}" class="w--26" alt="">
+                        <img src="{{ asset('assets/admin/img/email-setting.png') }}" class="w--26" alt="">
                     </span>
                     <span class="ml-2">
                         {{ translate('Email_Templates') }}
@@ -30,7 +30,7 @@
                             <h5 class="text-capitalize m-0 text--primary pl-2">
                                 {{translate('Send_Mail_on_New_Deliveryman_Rejection')}}
                                 <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('If_Admin_rejects_a_Deliveryman’s_self-registration,_the_Deliveryman_will_get_an_automatic_rejection_mail.')}}">
-                                    <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('show_hide_food_menu') }}">
+                                    <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('show_hide_food_menu') }}">
                                 </span>
                             </h5>
                             <label class="toggle-switch toggle-switch-sm">
@@ -96,7 +96,7 @@
                                     <div>
                                         <h5 class="card-title mb-3">
                                             {{translate('Icon')}}  <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Icon_must_be_1:1.')}}">
-                                                <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('show_hide_food_menu') }}">
+                                                <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('show_hide_food_menu') }}">
                                             </span>
                                         </h5>
                                         <div class="d-flex justify-content-center mt-4">
@@ -104,7 +104,7 @@
                                                 <input type="file" id="mail-icon" name="icon" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" class="upload-file__input">
                                                 <div class="upload-file__img_drag upload-file__img">
                                                     <img width="465" id="viewer"
-                                                         src="{{isset($data) && $data['icon'] ? asset('storage/app/public/email_template/'.$data['icon']) : asset('public/assets/admin/img/icons/upload_img2.png')}}"
+                                                         src="{{isset($data) && $data['icon'] ? asset('storage/app/public/email_template/'.$data['icon']) : asset('assets/admin/img/icons/upload_img2.png')}}"
                                                          alt="" style="max-height: 80px; object-fit: cover;">
                                                 </div>
                                             </div>
@@ -113,7 +113,7 @@
                                     <br>
                                     <div>
                                         <h5 class="card-title mb-3">
-                                            <img src="{{asset('public/assets/admin/img/pointer.png')}}" class="mr-2" alt="">
+                                            <img src="{{asset('assets/admin/img/pointer.png')}}" class="mr-2" alt="">
                                             {{translate('Header_Content')}}
                                         </h5>
                                         @if ($language)
@@ -121,7 +121,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">{{translate('Main_Title')}}({{ translate('default') }})
                                                         <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_main_title_within_45_characters')}}">
-                                                            <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('show_hide_food_menu') }}">
+                                                            <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('show_hide_food_menu') }}">
                                                         </span>
                                                     </label>
                                                     <input type="text" maxlength="45" name="title[]" value="{{ $data?->getRawOriginal('title') }}" data-id="mail-title" placeholder="{{ translate('Order_has_been_placed_successfully.') }}" class="form-control">
@@ -158,7 +158,7 @@
                                                     <div class="form-group">
                                                        <label class="form-label">{{translate('Main_Title')}}({{strtoupper($lang->code)}})
                                                             <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_45_characters')}}">
-                                                                <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('show_hide_food_menu') }}">
+                                                                <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('show_hide_food_menu') }}">
                                                             </span>
                                                         </label>
                                                         <input type="text" maxlength="45" name="title[]"  placeholder="{{ translate('Order_has_been_placed_successfully.') }}" class="form-control" value="{{$translate[$lang->code]['title']??''}}">
@@ -182,7 +182,7 @@
                                                 <div class="form-group">
                                                     <label class="form-label">{{translate('Main_Title')}}
                                                     <span class="input-label-secondary" data-toggle="tooltip" data-placement="right" data-original-title="{{ translate('Write_the_title_within_45_characters')}}">
-                                                                <img src="{{ asset('/public/assets/admin/img/info-circle.svg') }}" alt="{{ translate('show_hide_food_menu') }}">
+                                                                <img src="{{ asset('/assets/admin/img/info-circle.svg') }}" alt="{{ translate('show_hide_food_menu') }}">
                                                             </span></label>
                                                     <input type="text" maxlength="45" name="title[]" placeholder="{{ translate('Order_has_been_placed_successfully.') }}"class="form-control">
                                                 </div>
@@ -205,7 +205,7 @@
                                     <br>
                                     <div>
                                         <h5 class="card-title mb-3">
-                                            <img src="{{asset('public/assets/admin/img/pointer.png')}}" class="mr-2" alt="">
+                                            <img src="{{asset('assets/admin/img/pointer.png')}}" class="mr-2" alt="">
                                             {{translate('Footer_Content')}}
                                         </h5>
                                         <div class="__bg-F8F9FC-card">
@@ -391,7 +391,7 @@
                                 <div class="max-349 mx-auto mb-20">
                                     <div>
                                         <div class="text-center">
-                                            <img src="{{asset('/public/assets/admin/img/modal/place-order-off.png')}}" alt="" class="mb-20">
+                                            <img src="{{asset('/assets/admin/img/modal/place-order-off.png')}}" alt="" class="mb-20">
                                             <h5 class="modal-title">{{translate('By Turning OFF Send Mail on Place Order')}}</h5>
                                         </div>
                                         <div class="text-center">
@@ -402,7 +402,7 @@
                                     </div>
                                     <!-- <div>
                                         <div class="text-center">
-                                            <img src="{{asset('/public/assets/admin/img/modal/place-order-on.png')}}" alt="" class="mb-20">
+                                            <img src="{{asset('/assets/admin/img/modal/place-order-on.png')}}" alt="" class="mb-20">
                                             <h5 class="modal-title">{{translate('By Turning ON Send Mail on Place Order')}}</h5>
                                         </div>
                                         <div class="text-center">
@@ -435,7 +435,7 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/quill-editor.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/quill-editor.js') }}"></script>
     <script>
         $(document).ready(function () {
 

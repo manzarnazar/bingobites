@@ -7,7 +7,7 @@
         <div class="mb-3">
             <h1 class="page-header-title">
                 <span class="page-header-icon">
-                    <img src="{{asset('public/assets/admin/img/wallet.png')}}" class="width-24" alt="">
+                    <img src="{{asset('assets/admin/img/wallet.png')}}" class="width-24" alt="">
                 </span>
                 <span class="ml-2">{{translate('Wallet Bonus Update')}}</span>
             </h1>
@@ -111,7 +111,7 @@
         @endsection
 
         @push('script_2')
-            <script src="{{asset('public/assets/admin/js/wallet-bonus.js')}}"></script>
+            <script src="{{asset('assets/admin/js/wallet-bonus.js')}}"></script>
             <script>
                 "use strict";
 

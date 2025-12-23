@@ -4,14 +4,14 @@
 
 @push('css_or_js')
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{asset('public/assets/admin/css/lightbox.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/admin/css/lightbox.css')}}">
 @endpush
 
 @section('content')
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/message.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/message.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('Messages')}} <span id="message-count" class="badge badge-soft-dark rounded-50 fz-12 ml-1"></span>
                 </span>
@@ -93,7 +93,7 @@
                     <div class="align-items-center w-100" id="view-conversation">
                         <div class="d-flex h-100 w-100 justify-content-center align-items-center">
                             <div>
-                                <img src="{{asset('public/assets/admin/img/view-conv.png')}}" class="mw-100" alt="">
+                                <img src="{{asset('assets/admin/img/view-conv.png')}}" class="mw-100" alt="">
                             </div>
 
                         </div>
@@ -107,7 +107,7 @@
     </div>
 @endsection
 @push('script_2')
-    <script src="{{asset('public/assets/admin/js/lightbox.js')}}"></script>
+    <script src="{{asset('assets/admin/js/lightbox.js')}}"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js"></script>
     <script>

@@ -107,7 +107,7 @@ $lang = \App\CentralLogics\Helpers::get_default_language();
                 @if ($data['icon'])
                 src="{{ asset('storage/app/public/email_template/') }}/{{ $data['icon']??'' }}"
                 @else
-                src='{{ asset('/public/assets/admin/img/email-template-img.png') }}'
+                src='{{ asset('/assets/admin/img/email-template-img.png') }}'
                 @endif
                 id="iconViewer" alt="">
                 <h3 style="font-size:17px;font-weight:500" class="mt-2" id="mail-title">{{ $title?? translate('Main_Title_or_Subject_of_the_Mail') }}</h3>
@@ -135,7 +135,7 @@ $lang = \App\CentralLogics\Helpers::get_default_language();
                 @if ($logo)
                 <img style="width:120px;display:block;margin:10px auto" src="{{ asset('storage/app/public/restaurant/' . $logo) }}" alt="public/img">
                 @else
-                <img style="width:120px;display:block;margin:10px auto"  src="{{asset('/public/assets/admin/img/favicon.png')}}" alt="public/img">
+                <img style="width:120px;display:block;margin:10px auto"  src="{{asset('/assets/admin/img/favicon.png')}}" alt="public/img">
                 @endif
 
                 <span class="privacy">
@@ -158,7 +158,7 @@ $lang = \App\CentralLogics\Helpers::get_default_language();
                     @if (isset($social_media))
                         @foreach ($social_media as $social)
                             <a href="{{ $social->link }}" target=”_blank” id="{{ $social->name  }}-check" style="margin: 0 5px;text-decoration:none;{{ (isset($data[$social->name]) && $data[$social->name] == 1)?'':'display:none;' }}">
-                                <img src="{{asset('/public/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
+                                <img src="{{asset('/assets/admin/img/img/')}}/{{ $social->name }}.png" alt="">
                             </a>
                         @endforeach
                     @endif

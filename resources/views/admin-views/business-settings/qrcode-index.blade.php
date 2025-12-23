@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/business_setup2.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/business_setup2.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('business_setup')}}
                 </span>
@@ -27,10 +27,10 @@
                                 </div>
                             </div>
                             @php($restaurantLogo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()?->value)
-                            <div class="qr-wrapper" style="background: url({{asset('public/assets/admin/img/qr-bg.png')}}) no-repeat center center / 100% 100%">
+                            <div class="qr-wrapper" style="background: url({{asset('assets/admin/img/qr-bg.png')}}) no-repeat center center / 100% 100%">
                                 <a href="javascript:" class="qr-logo ratio-1" style="max-width: 100px; min-width: 70px;">
                                     <img src="{{asset('storage/app/public/qrcode/'.$data['logo'])}}"
-                                         onerror="this.src='{{asset('public/assets/admin/img/logo2.png')}}'"
+                                         onerror="this.src='{{asset('assets/admin/img/logo2.png')}}'"
                                          id="logoViewer" alt="" class="w-100 h-100 object-cover">
 
                                 </a>
@@ -39,7 +39,7 @@
                                 </p>
                                 <div class="text-center mt-4">
                                     <div>
-                                        <img src="{{asset('public/assets/admin/img/scan-me.png')}}" class="mw-100" alt="">
+                                        <img src="{{asset('assets/admin/img/scan-me.png')}}" class="mw-100" alt="">
                                     </div>
                                     <div class="my-3" >
                                         {!! $code !!}
@@ -93,7 +93,7 @@
                                                     <input type="file" id="qrLogo" name="logo" accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" class="upload-file__input" tabindex="3">
                                                     <div class="upload-file__img_drag upload-file__img">
                                                         <img width="465" id="viewer"
-                                                             src="{{isset($data) && $data['logo'] ? asset('storage/app/public/qrcode/'.$data['logo']) : asset('public/assets/admin/img/icons/upload_img2.png')}}"
+                                                             src="{{isset($data) && $data['logo'] ? asset('storage/app/public/qrcode/'.$data['logo']) : asset('assets/admin/img/icons/upload_img2.png')}}"
                                                              alt="" style="height: 200px; object-fit: cover;">
                                                     </div>
                                                 </div>

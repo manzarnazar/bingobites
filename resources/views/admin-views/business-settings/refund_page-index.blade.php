@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/icons/pages.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/icons/pages.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('page_setup')}}
                 </span>
@@ -55,7 +55,7 @@
 @endsection
 
 @push('script_2')
-    <script src="{{ asset('public/assets/admin/js/quill-editor.js') }}"></script>
+    <script src="{{ asset('assets/admin/js/quill-editor.js') }}"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             var bn_quill = new Quill('#editor', {

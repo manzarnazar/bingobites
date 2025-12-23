@@ -47,13 +47,13 @@
                             </div>
                             <div>
                                 <span class="badge badge-soft-secondary fz-12 px-3 py-2 text-title">
-                                    <img width="13" class="mr-1" src="{{asset('public/assets/admin/img/icons/leaf.svg')}}" alt="{{ translate('veg tag') }}">
+                                    <img width="13" class="mr-1" src="{{asset('assets/admin/img/icons/leaf.svg')}}" alt="{{ translate('veg tag') }}">
                                     {{ translate($product?->product_type) }}
                                 </span>
                                 @php($halalTagStatus = (integer) (\App\CentralLogics\Helpers::get_business_settings('halal_tag_status') ?? 0))
                                 @if($halalTagStatus && $productData['halal_status'] ?? 0 )
                                     <span class="badge badge-soft-secondary fz-12 px-3 py-2 text-title">
-                                        <img width="13" class="mr-1" src="{{asset('public/assets/admin/img/halal-tags.png')}}" alt="{{ translate('halal tag') }}">{{ translate("Halal") }}
+                                        <img width="13" class="mr-1" src="{{asset('assets/admin/img/halal-tags.png')}}" alt="{{ translate('halal tag') }}">{{ translate("Halal") }}
                                     </span>
                                 @endif
                             </div>

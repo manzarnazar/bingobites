@@ -8,11 +8,11 @@
                     @php($restaurant_logo=\App\Model\BusinessSetting::where(['key'=>'logo'])->first()->value)
                     <a class="navbar-brand" href="{{route('admin.dashboard')}}" aria-label="Front">
                         <img class="navbar-brand-logo" style="object-fit: contain;"
-                             onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                             onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
                              src="{{asset('storage/app/public/restaurant/'.$restaurant_logo)}}"
                              alt="Logo">
                         <img class="navbar-brand-logo-mini" style="object-fit: contain;"
-                             onerror="this.src='{{asset('public/assets/admin/img/160x160/img2.jpg')}}'"
+                             onerror="this.src='{{asset('assets/admin/img/160x160/img2.jpg')}}'"
                              src="{{asset('storage/app/public/restaurant/'.$restaurant_logo)}}" alt="Logo">
                     </a>
                     <!-- End Logo -->
@@ -923,7 +923,7 @@
                             <li class="navbar-vertical-aside-has-menu {{ Request::is('admin/ai-settings*') ? 'active' : '' }}">
                                 <a class="js-navbar-vertical-aside-menu-link nav-link"  href="{{ route('admin.ai-settings.configuration') }}">
                                     <div class="nav-icon d-flex">
-                                        <img width="18" height="18" class="svg" src="{{ asset(path: 'public/assets/admin/img/ai/ai-nav-icon.svg') }}" alt="">
+                                        <img width="18" height="18" class="svg" src="{{ asset(path: 'assets/admin/img/ai/ai-nav-icon.svg') }}" alt="">
                                     </div>
                                     <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">{{translate('AI_Configuration')}}</span>
                                 </a>

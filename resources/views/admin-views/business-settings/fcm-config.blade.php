@@ -6,7 +6,7 @@
     <div class="content container-fluid">
         <div class="d-flex flex-wrap gap-2 align-items-center mb-4">
             <h2 class="h1 mb-0 d-flex align-items-center gap-2">
-                <img width="20" class="avatar-img" src="{{asset('public/assets/admin/img/firebase.png')}}" alt="">
+                <img width="20" class="avatar-img" src="{{asset('assets/admin/img/firebase.png')}}" alt="">
                 <span class="page-header-title">
                     {{translate('firebase_push_notification_setup')}}
                 </span>
@@ -19,13 +19,13 @@
                     <ul class="nav nav-tabs nav--tabs border-0 gap-2">
                         <li class="nav-item mr-2 mr-md-4">
                             <a href="{{ route('admin.business-settings.web-app.third-party.fcm-index') }}" class="nav-link pb-2 px-0 pb-sm-3" data-slide="1">
-                                <img src="{{asset('/public/assets/admin/img/notify.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/notify.png')}}" alt="">
                                 <span>{{translate('Push Notification')}}</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('admin.business-settings.web-app.third-party.fcm-config') }}" class="nav-link pb-2 px-0 pb-sm-3 active" data-slide="2">
-                                <img src="{{asset('/public/assets/admin/img/firebase2.png')}}" alt="">
+                                <img src="{{asset('/assets/admin/img/firebase2.png')}}" alt="">
                                 <span>{{translate('Firebase Configuration')}}</span>
                             </a>
                         </li>
@@ -141,7 +141,7 @@
                     <div class="modal-body pb-5 pt-0">
                         <div class="max-349 mx-auto mb-20">
                             <div class="text-center">
-                                <img src="{{asset('/public/assets/admin/img/firebase/slide-4.png')}}" alt="" class="mb-20">
+                                <img src="{{asset('/assets/admin/img/firebase/slide-4.png')}}" alt="" class="mb-20">
                                 <h5 class="modal-title">{{translate('Please_Visit_the_Docs_to_Set_FCM_on_Mobile_Apps')}}</h5>
                             </div>
                             <div class="text-center">
