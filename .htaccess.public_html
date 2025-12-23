@@ -1,0 +1,18 @@
+# .htaccess for public_html root (if using standard Laravel structure)
+# Copy this file to public_html root and rename to .htaccess
+# This redirects all requests to the public folder
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Redirect to public folder
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Security: Deny access to sensitive files
+<FilesMatch "^(\.env|composer\.(json|lock)|package\.(json|lock)|\.git|\.gitignore|README\.md|DEPLOYMENT_GUIDE\.md|deploy-to-hostinger\.sh)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
